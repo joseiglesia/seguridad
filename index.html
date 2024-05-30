@@ -6,7 +6,62 @@
     <head>
         <title>Seguridad Informatica</title>
         <meta charset="UTF-8">
+
+        
         <style>
+
+            body {
+                font-family: "Lato", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .sidebar {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #b0d0ae;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            
+            .sidebar a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: rgb(17, 15, 15);
+                display: block;
+                transition: 0.3s;
+            }
+            
+            .sidebar a:hover {
+                color: #f7f1f1;
+            }
+            
+            .sidebar .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+            }
+            
+            .openbtn {
+                font-size: 20px;
+                cursor: pointer;
+                background-color: #111;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+            }
+            
+            #main {
+                transition: margin-left 0.5s;
+                padding: 16px;
+            }
+
             body {
                 background-color: #c9f0fb;
                 margin: 0 10%;
@@ -27,9 +82,31 @@
                 padding: 2px;
                 text-align: center;
             }
+            
         </style>
     </head>
     <body>
+
+
+        <div id="sidebar" class="sidebar">
+            
+               
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ol>
+            <li><a href="html/Consejos_Generales_de_Seguridad.html">Consejos Generales de Seguridad</a></li>
+            <li><a href="html/proteccion_contraseñas.html">Proteccion de Contraseñas</a></li>
+            <li><a href="html/seguridad_redes_sociales.html">Seguridad en Redes Sociales</a></li>
+            <li><a href="html/proteccion_contra_malware.html">Proteccion contra Malware</a></li>
+            <li><a href="html/recursos_y_enlaces_utiles.html">Recursos y enlaces utiles</a></li>
+        </ol>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; Barra Lateral</button>
+        </div>
+    
+        <script src="script.js"></script>
+
+
         <header>
         <h1>
             <br>Seguridad Informatica
@@ -48,12 +125,8 @@
                     red de trabajo en la que se pueden generar datos dentro de una infraestructura segura. 
                     HPE no solo suministra programas de seguridad informática para el sector público, sino que 
                     también fabrica servidores con los parámetros más altos de seguridad de la industria.</p>
-                    <p>Para conocer mas sobre la seguridad dar clic en cualquier boton</p>
-                    <button onclick="location.href='html/Consejos_Generales_de_Seguridad.html'">Consejos Generales de Seguridad</button>
-                    <button onclick="location.href='html/proteccion_contraseñas.html'">Proteccion de Contraseñas</button>
-                    <button onclick="location.href='html/seguridad_redes_sociales.html'">Seguridad en Redes Sociales</button>
-                    <button onclick="location.href='html/proteccion_contra_malware.html'">Proteccion contra Malware</button>
-                    <button onclick="location.href='html/recursos_y_enlaces_utiles.html'">Recursos y enlaces utiles</button>
+                    <h3>Para conocer mas sobre la seguridad dar clic en la barra lateral</h3>
+
 
                     <center><img src="img/inspe.jpeg" class="card-img-top" alt=""></center>
 
