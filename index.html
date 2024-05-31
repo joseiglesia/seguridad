@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Seguridad Informatica</title>
-        <meta charset="UTF-8">
-
-        
-        <style>
-
-            body {
-                font-family: "Lato", sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .sidebar {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: #b0d0ae;
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-            }
-            
-            .sidebar a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: rgb(17, 15, 15);
-                display: block;
-                transition: 0.3s;
-            }
-            
-            .sidebar a:hover {
-                color: #f7f1f1;
-            }
-            
-            .sidebar .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-            }
-            
-            .openbtn {
-                font-size: 40px;
-                cursor: pointer;
-                background-color: #111;
-                color: white;
-                padding: 20px 30px;
-                border: none;
-            }
-            
-            #main {
-                transition: margin-left 0.5s;
-                padding: 16px;
-            }
-
-            body {
-                background-color: #c9f0fb;
-                margin: 0 10%;
-            }
-            h1 {
-                text-align: center;
-            }
-            p{
-                text-align: justify;
-            }
-
-            
-        </style>
-    </head>
-    <body>
+<head>
+    <title>Seguridad Informatica</title>
+    <meta charset="UTF-8">
 
 
-        <div id="sidebar" class="sidebar">
-            
-               
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 2;
+            padding: 0;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #b0d0ae;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(17, 15, 15);
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f7f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+
+        .openbtn {
+            font-size: 40px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 20px 30px;
+            border: none;
+        }
+
+        #main {
+            transition: margin-left 0.5s;
+            padding: 16px;
+        }
+
+        body {
+            background-color: #c9f0fb;
+            margin: 0 10%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        header {
+            background-color: #f22a2a;
+            color: #030303;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="sidebar" class="sidebar">
+
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ol>
             <li><a href="html/Consejos_Generales_de_Seguridad.html">Consejos Generales de Seguridad</a></li>
             <li><a href="html/proteccion_contraseñas.html">Proteccion de Contraseñas</a></li>
@@ -90,41 +97,44 @@
             <li><a href="html/proteccion_contra_malware.html">Proteccion contra Malware</a></li>
             <li><a href="html/recursos_y_enlaces_utiles.html">Recursos y enlaces utiles</a></li>
         </ol>
-        </div>
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776; Barra Lateral</button>
-        </div>
-    
-        <script src="script.js"></script>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; Barra Lateral</button>
+    </div>
 
+    <script src="script.js"></script>
 
+    <div>
         <h1>
             <br>Seguridad Informatica
-            </h1>
-        <div>
+        </h1>
+    </div>
+    <div>
 
-                <p> Bienvenido a este sitio web donde te podemos ofrecer informacion valiosa sobre seguridad y algunos consejos 
-                    de seguridad para tener en cuenta.</p>
-                    <p> 
-                    En este sitio web hablaremos sobre la seguridad informática se encarga de mantener 
-                    la confidencialidad de los datos de tu organización y de recuperar el control mediante el 
-                    uso de recursos de gestión de riesgos en el caso de que se haya producido algún incidente.</p>
-                    <p>Las soluciones de seguridad informática de HPE proporcionan protección integral, incluidos 
-                    programas o firmware de seguridad integrados y opcionales, lo que tiene como resultado una 
-                    red de trabajo en la que se pueden generar datos dentro de una infraestructura segura. 
-                    HPE no solo suministra programas de seguridad informática para el sector público, sino que 
-                    también fabrica servidores con los parámetros más altos de seguridad de la industria.</p>
-                    <h3>Para conocer mas sobre la seguridad dar clic en la barra lateral</h3>
+        <p> Bienvenido a este sitio web donde te podemos ofrecer informacion valiosa sobre seguridad y algunos consejos
+            de seguridad para tener en cuenta.</p>
+        <p>
+            En este sitio web hablaremos sobre la seguridad informática se encarga de mantener
+            la confidencialidad de los datos de tu organización y de recuperar el control mediante el
+            uso de recursos de gestión de riesgos en el caso de que se haya producido algún incidente.</p>
+        <p>Las soluciones de seguridad informática de HPE proporcionan protección integral, incluidos
+            programas o firmware de seguridad integrados y opcionales, lo que tiene como resultado una
+            red de trabajo en la que se pueden generar datos dentro de una infraestructura segura.
+            HPE no solo suministra programas de seguridad informática para el sector público, sino que
+            también fabrica servidores con los parámetros más altos de seguridad de la industria.</p>
+        <h3>Para conocer mas sobre la seguridad dar clic en la barra lateral</h3>
 
 
-                    <center><img src="img/inspe.jpeg" class="card-img-top" alt=""></center>
+        <center><img src="img/inspe.jpeg" class="card-img-top" alt=""></center>
 
-                    <center>
-                    <table style="background-color:#52a5f8"><tr><th>Nombre</th><th>Correo Electronico</th></tr><tr><td>Jose Alberto Moreno Iglesia</td><td>morenoiglesiajosealberto@gmail.com</td></tr></table>
-                    </center>    
-                    <footer>
-                        <p>&copy; 2024 Seguridad Informatica. Todos los derechos reservados.</p>
-                        <p>Autor de sitio: Moreno Iglesia Jose Alberto</p>
-                    </footer>
-            </body>
+        <footer>
+            <header>
+                <p>Correo de contacto para mayor informacion: morenoiglesiajosealberto@gmail.com</p>
+                <p>&copy; 2024 Seguridad Informatica. Todos los derechos reservados.</p>
+                <p>Autor de sitio: Moreno Iglesia Jose Alberto</p>
+            </header>
+        </footer>
+    </div>
+</body>
+
 </html>
