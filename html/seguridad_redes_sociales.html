@@ -14,9 +14,112 @@
             p{
                 text-align: justify;
             }
+            body {
+                font-family: "Lato", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .sidebar {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #b0d0ae;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            
+            .sidebar a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: rgb(17, 15, 15);
+                display: block;
+                transition: 0.3s;
+            }
+            
+            .sidebar a:hover {
+                color: #f7f1f1;
+            }
+            
+            .sidebar .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+            }
+            
+            .openbtn {
+                font-size: 40px;
+                cursor: pointer;
+                background-color: #111;
+                color: white;
+                padding: 20px 30px;
+                border: none;
+            }
+            
+            #main {
+                transition: margin-left 0.5s;
+                padding: 16px;
+            }
+
+            body {
+                background-color: #c9f0fb;
+                margin: 0 10%;
+            }
+            h1 {
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+            }
+
+            .back-button {
+                font-size: 24px; /* Tamaño de la fuente más grande */
+                padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+                background-color: #007BFF; /* Color de fondo del botón */
+                color: white; /* Color del texto */
+                border: none; /* Sin borde */
+                border-radius: 5px; /* Bordes redondeados */
+                cursor: pointer; /* Cambia el cursor a pointer */
+                transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para hover */
+            }
+
+            body {
+                background-color: #3eccf3;
+                margin: 0 10%;
+            }
+            p  {
+                text-align: justify;
+            }
+            li {
+                text-align: justify;
+            }
         </style>
     </head>
     <body>
+
+        <div id="sidebar" class="sidebar">
+            
+               
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ol>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Consejos_Generales_de_Seguridad.html">Consejos Generales de Seguridad</a></li>
+            <li><a href="proteccion_contraseñas.html">Proteccion de Contraseñas</a></li>
+            <li><a href="proteccion_contra_malware.html">Proteccion contra Malware</a></li>
+            <li><a href="recursos_y_enlaces_utiles.html">Recursos y enlaces utiles</a></li>
+        </ol>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; Barra Lateral</button>
+        </div>
+    
+        <script src="script.js"></script>
+
         <div>
             <h1>
             <br>Seguridad en Redes Sociales
