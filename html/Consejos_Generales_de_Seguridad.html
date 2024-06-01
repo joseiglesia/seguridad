@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Seguridad Informatica</title>
@@ -7,8 +7,10 @@
     <style>
         body {
             font-family: "Lato", sans-serif;
-            margin: 0;
+            margin: 0; 
             padding: 0;
+            background-color: #5ee8eb;
+
         }
 
         .sidebar {
@@ -44,6 +46,8 @@
         }
 
         .openbtn {
+            margin: 0 1cm 1cm;
+
             font-size: 40px;
             cursor: pointer;
             background-color: #111;
@@ -55,51 +59,46 @@
         #main {
             transition: margin-left 0.5s;
             padding: 16px;
-        }
-
-        body {
-            background-color: #c9f0fb;
-            margin: 0 10%;
+            margin: 0 1cm;
         }
 
         h1 {
             text-align: center;
+            margin-top: 0;
         }
 
         p {
             text-align: justify;
+            margin: 0 1cm 1cm; 
         }
 
         .back-button {
             font-size: 24px;
-            /* Tamaño de la fuente más grande */
             padding: 15px 30px;
-            /* Aumenta el padding para hacer el botón más grande */
             background-color: #007BFF;
-            /* Color de fondo del botón */
             color: white;
-            /* Color del texto */
             border: none;
-            /* Sin borde */
             border-radius: 5px;
-            /* Bordes redondeados */
             cursor: pointer;
-            /* Cambia el cursor a pointer */
             transition: background-color 0.3s ease, transform 0.2s ease;
-            /* Transiciones para hover */
-        }
-
-        body {
-            background-color: #3eccf3;
-            margin: 0 10%;
-        }
-
-        p {
-            text-align: justify;
         }
 
         li {
             text-align: justify;
+            margin: 0 1cm; 
+        }
+        header {
+            background-color: #f4db02;
+            color: #030303;
+            padding: 20px;
+            text-align: center;
+            margin-top: 0; 
+        }
+        footer {
+            margin-top: 20px; 
+        }
+        p {
+            margin: 0 1cm 1cm;
         }
     </style>
 </head>
@@ -107,11 +106,10 @@
 <body>
 
     <div id="sidebar" class="sidebar">
-
-
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ol>
             <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Consejos_Generales_de_Seguridad.html">Consejos Generales de Seguridad</a></li>
             <li><a href="proteccion_contraseñas.html">Proteccion de Contraseñas</a></li>
             <li><a href="seguridad_redes_sociales.html">Seguridad en Redes Sociales</a></li>
             <li><a href="proteccion_contra_malware.html">Proteccion contra Malware</a></li>
@@ -119,12 +117,7 @@
         </ol>
     </div>
     <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; Barra Lateral</button>
-    </div>
-
-    <script src="script.js"></script>
-
-    <div>
+        <button class="openbtn" onclick="openNav()">&#9776; Mas Información</button>
         <h1>
             <br>Consejos Generales de Seguridad
         </h1>
@@ -197,14 +190,16 @@
             <p></p>
         </ol>
         </p>
-    </div>
 
     <footer>
-        <p>&copy; 2024 Consejos generales de Seguridad. Todos los derechos reservados.</p>
-        <p>Autor de sitio: Moreno Iglesia Jose Alberto</p>
+        <header>
+            <p>Correo de contacto para mayor informacion: morenoiglesiajosealberto@gmail.com</p>
+            <p>&copy; 2024 Seguridad Informatica. Todos los derechos reservados.</p>
+            <p>Autor de sitio: Moreno Iglesia Jose Alberto</p>
+        </header>
     </footer>
-
-
+    <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
